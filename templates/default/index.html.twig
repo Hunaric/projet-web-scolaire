@@ -1,0 +1,188 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Bienvenue sur notre page{% endblock %}
+
+{% block heroSection %}
+    
+            <section class="hero-section container">
+                <div class="hero hero-large rounded-2xl"
+                    style="background-image: url(https://i.ibb.co.com/Z6jhvS9b/Group-13.png);">
+                    <div class="hero-content">
+                        <div class="hero-inner">
+                            <h1 class="hero-title">Best Practices for Maintaining Your
+                                Pet's Coat and Hygiene</h1>
+                            <p class="hero-subtext">
+                                This provides essential tips and techniques to ensure
+                                your pet's fur and skin stay healthy and clean.
+                            </p>
+                            <button class="btn btn-shop">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+{% endblock heroSection %}
+
+{% block contenuCentral %}
+    {{ parent() }}
+
+    
+<section class="category-section flex justify-center items-center flex-col container">
+                <h1 class="text-2xl font-medium text-center mb-8">Category</h1>
+                <div class="category-grid">
+                    <div class="category-item">
+                        <img class="category-img" src="https://i.ibb.co.com/5gQtxpwD/Ellipse-1.png" alt="">
+                        <h2 class="category-title">Chien</h2>
+                    </div>
+                    <div class="category-item">
+                        <img class="category-img" src="https://i.ibb.co.com/20fdd3Yh/Cat.png" alt="">
+                        <h2 class="category-title">Chat</h2>
+                    </div>
+                    <div class="category-item">
+                        <img class="category-img" src="https://i.ibb.co.com/h11Rpmmc/Ellipse-3-1.png" alt="">
+                        <h2 class="category-title">Poisson</h2>
+                    </div>
+                    <div class="category-item">
+                        <img class="category-img" src="https://i.ibb.co.com/8n9SK535/Ellipse-4.png" alt="">
+                        <h2 class="category-title">Lapin</h2>
+                    </div>
+                    <div class="category-item">
+                        <img class="category-img" src="https://i.ibb.co.com/mF2wTBXk/Ellipse-5.png" alt="">
+                        <h2 class="category-title">Oiseaux</h2>
+                    </div>
+                    <div class="category-item">
+                        <img class="category-img" src="https://i.ibb.co.com/XZzFXKPH/Ellipse-6.png" alt="">
+                        <h2 class="category-title">Hamsters</h2>
+                    </div>
+                    <div class="category-item">
+                        <img class="category-img" src="https://i.ibb.co.com/bgDqRSHw/Ellipse-7.png" alt="">
+                        <h2 class="category-title">Tortues</h2>
+                    </div>
+                    <div class="category-item">
+                        <img class="category-img" src="https://i.ibb.co.com/5gQtxpwD/Ellipse-1.png" alt="">
+                        <h2 class="category-title">Chien</h2>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Us Section -->
+            <section class="container">
+                <div class="about-flex">
+                    <div class="about-col">
+                        <h1 class="text-2xl font-medium">About Us</h1>
+                        <p class="about-text">we understand that pets are more than just animals;
+                            they are cherished members of your family. Our mission is to provide you with the highest quality products that
+                            ensure your pets lead healthy, happy, and fulfilling lives. From nutritious food and cozy beds to engaging toys and essential grooming supplies, we have everything
+                            you need to pamper your furry friends.
+                            <br><br>
+                            we understand that pets are more than just animals; they are cherished members
+                            of your family. Our mission is to provide you with the highest quality products that
+                            ensure your pets lead healthy, happy, and fulfilling lives. From nutritious food and
+                            cozy beds to engaging toys and essential grooming supplies, we have everything
+                            you need to pamper your furry friends.
+                        </p>
+                    </div>
+                    <div class="about-col">
+                        <img class="full-image" src="https://i.ibb.co.com/gMQ0Cp4t/Rectangle-7.png" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <!-- This is Short Banner section -->
+            <section class="container">
+                <div class="banner-row">
+                    <div class="banner-item hero hero-medium rounded-lg" style="background-image: url(https://i.ibb.co.com/LXH4sBSS/Rectangle-3.png);">
+                        <div class="hero-overlay"></div>
+                        <div class="hero-content">
+                            <div class="hero-inner">
+                                <h1 class="text-3xl font-bold mb-5">Pamper Your Pets Must-Have Items for
+                                    Happy and Healthy Pets</h1>
+                                <button class="btn btn-shop">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner-item hero hero-medium rounded-lg" style="background-image: url(https://i.ibb.co.com/GvVkq15H/Rectangle-3-1.png);">
+                        <div class="hero-overlay"></div>
+                        <div class="hero-content">
+                            <div class="hero-inner">
+                                <h1 class="text-3xl font-bold mb-5">Discover the Best Products for Your
+                                    Beloved Companions</h1>
+                                <button class="btn btn-shop">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- This is Featured Product Section -->
+            <section class="container">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:2rem">
+                    <h1 class="text-2xl font-medium">Featured Product</h1>
+                    <p>See all</p>
+                </div>
+                <div class="featured-grid">
+                    <div class="product-card">
+                        <img class="product-image" src="https://i.ibb.co.com/3550wzFZ/1.png" alt="">
+                        <button class="product-btn">View Details</button>
+                    </div>
+                    <div class="product-card">
+                        <img class="product-image" src="https://i.ibb.co.com/NdNvPnK3/2.png" alt="">
+                        <button class="product-btn">View Details</button>
+                    </div>
+                    <div class="product-card">
+                        <img class="product-image" src="https://i.ibb.co.com/PzCwHqfH/3.png" alt="">
+                        <button class="product-btn">View Details</button>
+                    </div>
+                    <div class="product-card">
+                        <img class="product-image" src="https://i.ibb.co.com/fdY6F7D6/4.png" alt="">
+                        <button class="product-btn">View Details</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- This is Offer Product Section -->
+            <section class="container">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:2rem">
+                    <h1 class="text-2xl font-medium">Offer Product</h1>
+                    <p>See all</p>
+                </div>
+                <div class="featured-grid">
+                    <div class="product-card">
+                        <div class="discount-badge">20% Off</div>
+                        <img class="product-image" src="https://i.ibb.co.com/XkYQ9YTf/5.png" alt="">
+                        <button class="product-btn">View Details</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="discount-badge">10% Off</div>
+                        <img class="product-image" src="https://i.ibb.co.com/FkT276WD/7.png" alt="">
+                        <button class="product-btn">View Details</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="discount-badge">15% Off</div>
+                        <img class="product-image" src="https://i.ibb.co.com/jvS6mJQQ/8.png" alt="">
+                        <button class="product-btn">View Details</button>
+                    </div>
+                    <div class="product-card">
+                        <div class="discount-badge">25% Off</div>
+                        <img class="product-image" src="https://i.ibb.co.com/XfMkpZJS/6.png" alt="">
+                        <button class="product-btn">View Details</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Why Choose Us Section -->
+            <section class="container" style="margin-top:3rem; margin-bottom:3rem">
+                <div class="about-flex">
+                    <div class="about-col">
+                        <img class="full-image" src="https://i.ibb.co.com/yc9G8brs/Rectangle-7.png" alt="">
+                    </div>
+                    <div class="about-col">
+                        <h1 class="text-2xl font-medium">Why Choose Us</h1>
+                        <p class="about-text">we understand that pets are more than just animals;
+                            they are cherished members of your family. Our mission is to provide you with the highest quality products that
+                            ensure your pets lead healthy, happy, and fulfilling lives. From nutritious food and cozy beds to engaging toys and essential grooming supplies, we have everything
+                            you need to pamper your furry friends.
+                        </p>
+                    </div>
+                </div>
+            </section>
+{% endblock %}
