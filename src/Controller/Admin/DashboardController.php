@@ -37,7 +37,7 @@ class DashboardController extends AbstractDashboardController
         yield MenuItem::linkToDashboard('Tableau de bord', 'fa fa-home');
         // Animaux
         yield MenuItem::subMenu('Animaux', 'fa fa-box')->setSubItems([
-            MenuItem::linkToCrud('Ajouter Animal', 'fa fa-plus', Animaux::class)->setAction('new'),
+            MenuItem::linkToCrud('Ajouter Catégorie Animal', 'fa fa-plus', Animaux::class)->setAction('new'),
             MenuItem::linkToCrud('Voir Animaux', 'fa fa-eye', Animaux::class),
         ]);
         // Categories

@@ -24,9 +24,16 @@ class Animaux
     #[ORM\ManyToMany(targetEntity: Produit::class, inversedBy: 'animauxes')]
     private Collection $produit;
 
+    /**
+     * @var Collection<int, AnimalClient>
+     */
+    #[ORM\OneToMany(targetEntity: AnimalClient::class, mappedBy: 'typeAnimal')]
+    private Collection $animalClients;
+
     public function __construct()
     {
         $this->produit = new ArrayCollection();
+        $this->animalClients = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -66,6 +73,36 @@ class Animaux
     public function removeProduit(Produit $produit): static
     {
         $this->produit->removeElement($produit);
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, AnimalClient>
+     */
+    public function getAnimalClients(): Collection
+    {
+        return $this->animalClients;
+    }
+
+    public function addAnimalClient(AnimalClient $animalClient): static
+    {
+        if (!$this->animalClients->contains($animalClient)) {
+            $this->animalClients->add($animalClient);
+            $animalClient->setTypeAnimal($this);
+        }
+
+        return $this;
+    }
+
+    public function removeAnimalClient(AnimalClient $animalClient): static
+    {
+        if ($this->animalClients->removeElement($animalClient)) {
+            // set the owning side to null (unless already changed)
+            if ($animalClient->getTypeAnimal() === $this) {
+                $animalClient->setTypeAnimal(null);
+            }
+        }
 
         return $this;
     }
